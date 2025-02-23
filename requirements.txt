@@ -1,0 +1,6 @@
+google-api-python-client
+tensorflow
+pandas
+numpy
+streamlit
+plotly
