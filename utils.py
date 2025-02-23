@@ -20,8 +20,8 @@ class preprocess():
             x.append(result)
 
         x =[re.sub('[^a-zA-Z]',' ',words) for words in x]
-        voca_len =10000
-        x_ohe = [word_dict[word]if word in word_dict.keys()  else one_hot(word,30000) for word in sents]
+        voca_len =15000
+        x_ohe = [word_dict[word]if word in word_dict.keys()  else one_hot(word,15000) for word in sents]
         sent_len = 100
         x_pad = sequence.pad_sequences(x_ohe,maxlen=sent_len)
         return x_pad
